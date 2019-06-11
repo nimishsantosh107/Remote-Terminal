@@ -1,6 +1,6 @@
 #!/usr/bin/expect -f
  
-set timeout -1
+set timeout 10
 
 spawn login client
 
