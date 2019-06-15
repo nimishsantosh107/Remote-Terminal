@@ -1,0 +1,2 @@
+started from bashrc 
+	~/.CONNECT/.main.sh

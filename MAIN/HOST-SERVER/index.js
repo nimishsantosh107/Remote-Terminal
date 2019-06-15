@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const ioc = require('socket.io-client');
 const cmd = require('node-cmd');
 
-const LINK = "http://localhost:3000/"
+const LINK = "https://terminal-share.herokuapp.com/"
 const PORT = 2000
 
 var app = express();
@@ -25,10 +25,9 @@ server.listen(PORT,()=>{
 //****************
 		iocc.on('hostInit',()=>{
 			console.log('LOGIN');
-			cmd.run('open -a Terminal.app ./login.sh');
+			cmd.run('open -a Terminal.app /Users/nimish/Desktop/terminal/MAIN/HOST-SERVER/login.sh');
 		});
 
-		//***************PROBLEM AT RECEIVING LINK***************
 		app.post('/link',(req,res)=>{
 			var link = req.body.link;
 			link = link.match(/(https).*/gi)[0];
