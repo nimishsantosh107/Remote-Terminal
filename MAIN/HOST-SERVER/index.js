@@ -25,7 +25,7 @@ server.listen(PORT,()=>{
 //****************
 		iocc.on('hostInit',()=>{
 			console.log('LOGIN');
-			cmd.run('open -a Terminal.app /Users/nimish/Desktop/terminal/MAIN/HOST-SERVER/login.sh');
+			cmd.run('open -a Terminal.app /Users/nimish/Desktop//Projects/terminal-share/MAIN/HOST-SERVER/login.sh');
 		});
 
 		app.post('/link',(req,res)=>{
