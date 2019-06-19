@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node MAIN/WEB-SERVER/index.js"
+    "start": "node TEST/test.js"
   },
   "author": "",
   "license": "ISC",
